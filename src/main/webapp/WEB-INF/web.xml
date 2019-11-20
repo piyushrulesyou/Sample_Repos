@@ -1,0 +1,61 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name>Archetype Created Web Application</display-name>
+
+	<welcome-file-list>
+		<welcome-file>LoginPage.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>UpdateImageControllerInDb</servlet-name>
+		<servlet-class>com.uploadImageInDb.Controller.UpdateImageControllerInDb</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ImageControllerInDb</servlet-name>
+		<servlet-class>com.uploadImageInDb.Controller.ImageControllerInDb</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DeleteControllerInDb</servlet-name>
+		<servlet-class>com.uploadImageInDb.Controller.DeleteControllerInDb</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginControllerInDb</servlet-name>
+		<servlet-class>com.uploadImageInDb.Controller.LoginControllerInDb</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LogoutControllerInDb</servlet-name>
+		<servlet-class>com.uploadImageInDb.Controller.LogoutControllerInDb</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateImageControllerInDb</servlet-name>
+		<url-pattern>/UpdateImageControllerInDb</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ImageControllerInDb</servlet-name>
+		<url-pattern>/ImageControllerInDb</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LoginControllerInDb</servlet-name>
+		<url-pattern>/LoginControllerInDb</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DeleteControllerInDb</servlet-name>
+		<url-pattern>/DeleteControllerInDb</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogoutControllerInDb</servlet-name>
+		<url-pattern>/LogoutControllerInDb</url-pattern>
+	</servlet-mapping>
+
+	
+</web-app>
